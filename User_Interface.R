@@ -22,7 +22,6 @@ R0 <- 2          # Null rank is 2 [cite: 2163]
 
 # --- Graphon Construction ---
 # Define constants from paper [cite: 2158-2159]
-set.seed(200)
 random_matrix <- cbind(c(1000,900,800,1000),matrix(rnorm(12), nrow = 4, ncol = 3))
 gram = gramSchmidt(random_matrix)
 Qnormal = gram$Q # matrix of orthon
